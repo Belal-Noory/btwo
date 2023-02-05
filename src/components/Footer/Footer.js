@@ -13,7 +13,7 @@ const Footer = () => {
                                 <i class="pi pi-fw pi-map"></i>
                                 <div class="cta-text">
                                     <h4>Find us</h4>
-                                    <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    <span>Sare Dawra 5th region, Kunduz, Afghanistan</span>
                                 </div>
                             </div>
                         </div>
@@ -22,7 +22,7 @@ const Footer = () => {
                                 <i class="pi pi-fw pi-phone"></i>
                                 <div class="cta-text">
                                     <h4>Call us</h4>
-                                    <span>9876543210 0</span>
+                                    <span>+93 797 160 881</span>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                                 <i class="pi pi-fw pi-inbox"></i>
                                 <div class="cta-text">
                                     <h4>Mail us</h4>
-                                    <span>mail@info.com</span>
+                                    <span>info@btworg.com</span>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                             <div class="copyright-text">
-                                <p>Copyright &copy; 2023, All Right Reserved <a href="https://btow.org/">BTOW</a></p>
+                                <p>Copyright &copy; 2023, All Right Reserved <a href="https://btworg.com">Better Tommorow for Women Organization</a></p>
                             </div>
                         </div>
                     </div>
