@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const images = ['carousel-1.jpg', 'carousel-2.jpg'];
@@ -15,7 +16,7 @@ const Header = () => {
   }, []);
   const stickNavbar = () => {
     if (window !== undefined) {
-      let windowWidth = window.innerWidth;
+      let windowWidth = window.outerWidth;
       if (windowWidth > 766) {
         setClipPath('polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%');
       } else {
@@ -24,7 +25,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="grid grid-nogutter surface-0 text-800">
+    <div className="grid grid-nogutter text-800">
       <div className="col-12 md:col-8">
         <Carousel showThumbs={false} showArrows={false} infiniteLoop={true} autoPlay={true} showStatus={false}>
           {
@@ -36,12 +37,12 @@ const Header = () => {
           }
         </Carousel>
       </div>
-      <div className="col-12 md:col-4 p-2 text-center flex align-items-center ">
+      <div className="col-12 md:col-4 text-center flex align-items-center p-1">
         <section>
-          <div className="text-6xl text-primary font-bold">Better Tommorow for Women Organization</div>
-          <p className="mt-0 mb-4 text-700 line-height-3">BTWO Trust (BTWOT) is a not-for-profit organization working for education, health, and women’s empowerment in underprivileged communities, especially with children and women.</p>
-          <Button label="Learn More" type="button" className="mr-3 p-button-raised" />
-          <Button label="Org Chart" type="button" className="p-button-outlined" />
+          <div className="text-3xl font-bold" style={{color:'var(--primaryColor)'}}>Women’s Hope for Peace & Life Organization - WHPLO</div>
+          <p className="mt-0 mb-4 text-700 line-height-3">Women’s Hope for peace and Life Organization (WHPLO) is nongovernmental, non-profit and independent organization established in 07-May-2020 (18-02-1399) based in Kunduz province and officially registered with Ministry of Economy of Islamic Republic of Afghanistan bearing registration number 4953. WHPLO is a not-for-profit organization working for education, health, and women’s empowerment in underprivileged communities, especially with children and women.</p>
+          <Link to="/about" style={{textDecoration:'none'}}><Button label="Learn More" type="button" className="mr-3" style={{background:'var(--primaryColor)'}} /></Link>
+          <Link to="/orgChart" style={{textDecoration:'none'}}><Button label="Org Chart" type="button" style={{borderColor:'var(--primaryColor)',background:'#fff',color:'var(--primaryColor)'}} /></Link>
         </section>
       </div>
     </div>
