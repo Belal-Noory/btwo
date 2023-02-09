@@ -27,7 +27,7 @@ const Team = () => {
                 <h2>General Director</h2>
                 <p>My goal is to empower women in society. Proactive leader with strength in communication and collaboration.</p>
                 <div className="social-media">
-                  <Link to="/team/GD" style={{color:'white'}}><Visibility /></Link>
+                  <Link to="/team/Nawab-Rahimi" style={{color:'white'}}><Visibility /></Link>
                 </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Team = () => {
                 <h2>Program Manager</h2>
                 <p>I have proved to be an independent worker with a reputation as a resourceful problem-solver who uses his initiative and organizational skills to get the job done.</p>
                 <div className="social-media">
-                  <Link to="/team/PM" style={{color:'white'}}><Visibility /></Link>
+                  <Link to="/team/Belal-Noory" style={{color:'white'}}><Visibility /></Link>
                 </div>
             </div>
           </div>

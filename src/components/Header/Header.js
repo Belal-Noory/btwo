@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const images = ['carousel-1.jpg', 'carousel-2.jpg'];
-  const [clipPath, setClipPath] = useState('polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%');
+  const [clipPath, setClipPath] = useState();
 
   useEffect(() => {
+    stickNavbar();
     window.addEventListener('resize', stickNavbar);
     return () => {
       window.removeEventListener('resize', stickNavbar);
@@ -25,23 +26,22 @@ const Header = () => {
     }
   };
   return (
-    <div className="grid grid-nogutter text-800">
-      <div className="col-12 md:col-8">
+    <div className="grid grid-nogutter text-800" style={{minHeight:'92.1vh'}}>
+      <div className="col-12 md:col-8" >
         <Carousel showThumbs={false} showArrows={false} infiniteLoop={true} autoPlay={true} showStatus={false}>
           {
             images.map((img, index) =>
-              <div key={index}>
-                <img src={'assets/' + img} alt="Header" style={{ clipPath: clipPath }} />
-              </div>
+                <img key={index} src={'assets/' + img} alt="Header" style={{ clipPath: clipPath, height:'92.1vh', objectFit:'cover' }} />
             )
           }
         </Carousel>
       </div>
       <div className="col-12 md:col-4 text-center flex align-items-center p-1">
         <section>
+          <img alt="logo" src="assets/logo1.png" className="img-fluid" style={{width:'70%'}}></img>
           <div className="text-3xl font-bold" style={{color:'var(--primaryColor)'}}>Women’s Hope for Peace & Life Organization - WHPLO</div>
-          <p className="mt-0 mb-4 text-700 line-height-3">Women’s Hope for peace and Life Organization (WHPLO) is nongovernmental, non-profit and independent organization established in 07-May-2020 (18-02-1399) based in Kunduz province and officially registered with Ministry of Economy of Islamic Republic of Afghanistan bearing registration number 4953. WHPLO is a not-for-profit organization working for education, health, and women’s empowerment in underprivileged communities, especially with children and women.</p>
-          <Link to="/about" style={{textDecoration:'none'}}><Button label="Learn More" type="button" className="mr-3" style={{background:'var(--primaryColor)'}} /></Link>
+          <p className="mt-0 mb-4 text-200 line-height-3 p-2">To Improve culture of respecting Women and Children and give rights to them to contribute on social, economics and education activities and have special place among the society.</p>
+          <Link to="/about" style={{textDecoration:'none'}}><Button label="Learn More" type="button" className="mr-3 text-white" style={{background:'var(--primaryColor)'}} /></Link>
           <Link to="/orgChart" style={{textDecoration:'none'}}><Button label="Org Chart" type="button" style={{borderColor:'var(--primaryColor)',background:'#fff',color:'var(--primaryColor)'}} /></Link>
         </section>
       </div>
