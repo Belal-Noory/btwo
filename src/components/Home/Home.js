@@ -7,6 +7,7 @@ import Team from '../Team/Team'
 import WorkArea from '../WorkArea';
 // import Vision from "../Vision";
 import RecentActivity from '../RecentActivity';
+import Doners from '../Donners/Doners';
 const Home = () => {
   // const kdz = map.features.filter(map => map.properties.provinceName === "Kunduz");
   // const data = [{
@@ -28,6 +29,7 @@ const Home = () => {
       <RecentActivity/>
       <WorkArea/>
       <Team />
+      <Doners/>
     </div>
   )
 }
