@@ -4,7 +4,6 @@ import Vision from '../Vision'
 import WorkArea from '../WorkArea'
 import { Timeline } from 'primereact/timeline';
 import "./TimelineDemo.css";
-import { Image } from 'primereact/image';
 
 const About = () => {
   const events = [
