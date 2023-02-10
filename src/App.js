@@ -9,6 +9,8 @@ import Footer from "./components/Footer/Footer"
 import Resume from './components/Resume/Resume';
 import About from './components/About/About';
 import OrgChart from './components/OrgChart';
+import Vision from './components/Vision';
+import Navbar from './components/Home/Navbar';
 
 function App() {
   return (
@@ -16,6 +18,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/vision' element={
+          <>
+            <Navbar/>
+            <div className="text-700 text-center pr-6 pl-6 pb-6 pt-2">
+              <img src="assets/logo2.png" className="img-fluid" alt='logo' width="300" />
+              <Vision />
+            </div>
+          </>
+        } />
         <Route path='/orgChart' element={<OrgChart />} />
         <Route path='/team/:id' element={<Resume />} />
       </Routes>

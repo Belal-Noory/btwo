@@ -19,7 +19,7 @@ const Header = () => {
     if (window !== undefined) {
       let windowWidth = window.outerWidth;
       if (windowWidth > 766) {
-        setClipPath('polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%');
+        setClipPath('polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%)');
       } else {
         setClipPath('');
       }

@@ -10,7 +10,6 @@
     width: 400px;
     padding: 40px 0;
     height: 500px;
-    background-color: var(--thirdColor);
     transition: all 1s;
     display: flex;
     flex-direction: column;

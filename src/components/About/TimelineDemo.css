@@ -1,0 +1,30 @@
+.customized-timeline .p-timeline-event-separator .p-timeline-event-marker{
+    background: #35ace0;
+}
+
+.customized-timeline .p-timeline-event-separator .p-timeline-event-connector{
+    background:#31afb9;
+}
+
+.child .p-timeline-event-separator .p-timeline-event-marker{
+    background:#FFF;
+}
+
+.child .p-timeline-event-separator .p-timeline-event-connector{
+    background:#FFF;
+}
+
+@media screen and (max-width: 991px) {
+    .customized-timeline .p-timeline-event:nth-child(even) {
+        flex-direction: row !important;
+    }
+    .customized-timeline .p-timeline-event:nth-child(even) .p-timeline-event-content {
+        text-align: left !important;
+    }
+    .customized-timeline .p-timeline-event-opposite {
+        flex: 0;
+    }
+    .customized-timeline .p-card {
+        margin-top: 1rem;
+    }
+}
