@@ -61,7 +61,10 @@ export default function Navbar() {
                     icon: 'pi pi-fw pi-check-circle',
                     items: [
                         {
-                            label: 'P1',
+                            label: 'IDPs HHs Assessment in Imam Sahib District',
+                        },
+                        {
+                            label: 'Awareness raising campaigns for COVID-19',
                         },
                     ]
                 }
