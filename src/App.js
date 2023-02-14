@@ -8,9 +8,12 @@ import Home from './components/Home/Home';
 import Footer from "./components/Footer/Footer"
 import Resume from './components/Resume/Resume';
 import About from './components/About/About';
-import OrgChart from './components/OrgChart';
+import OrgChart from './components/OrgCart/OrgChart';
 import Vision from './components/Vision';
 import Navbar from './components/Home/Navbar';
+import HRPolicy from './components/Policy/HRPolicy';
+import FinancePolicy from './components/Policy/FinancePolicy';
+import ProcurePolicy from './components/Policy/ProcurePolicy';
 
 function App() {
   return (
@@ -20,7 +23,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/vision' element={
           <>
-            <Navbar/>
+            <Navbar />
             <div className="text-700 text-center pr-6 pl-6 pb-6 pt-2">
               <img src="assets/logo2.png" className="img-fluid" alt='logo' width="300" />
               <Vision />
@@ -29,6 +32,9 @@ function App() {
         } />
         <Route path='/orgChart' element={<OrgChart />} />
         <Route path='/team/:id' element={<Resume />} />
+        <Route path="HRP" element={<HRPolicy />}></Route>
+        <Route path="FP" element={<FinancePolicy />}></Route>
+        <Route path="LP" element={<ProcurePolicy />}></Route>
       </Routes>
       <Footer />
     </div>

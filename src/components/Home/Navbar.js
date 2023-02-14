@@ -77,18 +77,30 @@ export default function Navbar() {
                 {
                     label: 'Human Resource (HR) Policy',
                     icon: 'pi pi-fw pi-user',
+                    command: ()=>{
+                        navigate("/HRP");
+                    }
                 },
                 {
                     label: 'Financial Policy',
-                    icon: 'pi pi-fw pi-dollar'
+                    icon: 'pi pi-fw pi-dollar',
+                    command: ()=>{
+                        navigate("/FP");
+                    }
                 },
                 {
                     label: 'Procurement/logistics Policy',
-                    icon: 'pi pi-fw pi-chart-pie'
+                    icon: 'pi pi-fw pi-chart-pie',
+                    command: ()=>{
+                        navigate("/LP");
+                    }
                 },
                 {
                     label: 'Gender Policy',
-                    icon: 'pi pi-fw pi-verified'
+                    icon: 'pi pi-fw pi-verified',
+                    command: ()=>{
+                        navigate("/GP");
+                    }
                 }
             ]
         },

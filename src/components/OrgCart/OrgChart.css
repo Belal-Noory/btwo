@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px) {
+    .p-organizationchart-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-organizationchart-nodes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .p-organizationchart-lines{
+        display: none;
+    }
+}

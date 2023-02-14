@@ -5,7 +5,7 @@ import { Button } from 'primereact/button';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const images = ['carousel-1.jpg', 'carousel-2.jpg'];
+  const images = ['proj1.jpeg', 'proj2.jpeg','proj3.jpeg','proj4.jpeg'];
   const [clipPath, setClipPath] = useState();
 
   useEffect(() => {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { OrganizationChart } from 'primereact/organizationchart';
-import Navbar from './Home/Navbar'
+import Navbar from '../Home/Navbar'
+import "./OrgChart.css"
 
 const OrgChart = () => {
     const data = [{
