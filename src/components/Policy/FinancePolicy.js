@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
-import { Button } from 'primereact/button';
 
 const FinancePolicy = () => {
     return (
@@ -11,7 +10,6 @@ const FinancePolicy = () => {
                 <div className="font-bold text-4xl mb-3" style={{ color: 'var(--primaryColor)' }}>WHPLO Financial Policies</div>
                 <div className="text-700 text-justify container">
                     <div className="text-200">WHPLO strives to have the best possible internal controls and financial systems. These financial policies are created by the staff and approved by the Board of Directors to guide the work of staff and outsourced financial management.</div>
-                    <Button icon="pi pi-download" label='Download Finance Policy' aria-label="Download" className='mt-2' />
                     <div className="font-bold text-4xl" style={{ color: 'var(--primaryColor)' }}>Finance Committee</div>
                     <div className='grid'>
                         <div className='col-12 md:col-8 text-200'>

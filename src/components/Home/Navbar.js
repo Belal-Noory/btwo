@@ -105,10 +105,6 @@ export default function Navbar() {
             ]
         },
         {
-            label: 'Blog',
-            icon: 'pi pi-fw pi-users',
-        },
-        {
             label: 'Contact Us',
             icon: 'pi pi-fw pi-inbox',
         }

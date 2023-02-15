@@ -32,9 +32,9 @@ function App() {
         } />
         <Route path='/orgChart' element={<OrgChart />} />
         <Route path='/team/:id' element={<Resume />} />
-        <Route path="HRP" element={<HRPolicy />}></Route>
-        <Route path="FP" element={<FinancePolicy />}></Route>
-        <Route path="LP" element={<ProcurePolicy />}></Route>
+        <Route path="/HRP" element={<HRPolicy />}></Route>
+        <Route path="/FP" element={<FinancePolicy />}></Route>
+        <Route path="/LP" element={<ProcurePolicy />}></Route>
       </Routes>
       <Footer />
     </div>

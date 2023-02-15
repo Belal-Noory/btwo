@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Home/Navbar'
-import { Button } from 'primereact/button';
 
 const ProcurePolicy = () => {
     return (
@@ -11,7 +10,6 @@ const ProcurePolicy = () => {
                 <div className="font-bold text-4xl mb-3" style={{ color: 'var(--primaryColor)' }}>WHPLO Procurement/Logistics Policies</div>
                 <div className="text-700 text-justify container">
                     <div className="text-200">Corruption and inefficiency in procurement decreases the benefits that public resources otherwise could have delivered to citizens, and also lowers the level of trust and confidence in governments. Procurement policies and procedures should be revisited often to make sure they are still meeting your needs, failure to do so could create problems throughout the organization.</div>
-                    <Button icon="pi pi-download" label='Download Procurment Policy' aria-label="Download" className='mt-2' />
                     <div className="font-bold text-4xl" style={{ color: 'var(--primaryColor)' }}>Commitment</div>
                     <div className='grid'>
                         <div className='col-12 md:col-8 text-200'>
