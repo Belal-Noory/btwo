@@ -47,7 +47,8 @@ const Project = () => {
                 datasets: ndatasets
             });
         }
-    }, []);
+        // eslint-disable-next-line
+    }, []); 
 
     return (
         <div>
