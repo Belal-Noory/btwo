@@ -59,7 +59,8 @@ const Doners = () => {
     };
     return (
         <div className='container-fluid'>
-            <div className="font-bold text-3xl mb-3 text-center" style={{color:'var(--primaryColor)'}}>OUR Valued Doners/Parteners</div>
+            <div className="font-bold text-3xl text-center" style={{color:'var(--primaryColor)'}}>OUR Valued Doners/Parteners</div>
+            <div className='text-center text-200 text-xl mb-3'><cite>"I have found that among its other benefits, giving liberates the soul of the giver."</cite> <br/>Maya Angelou</div>
             <Carousel value={doners} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} className="custom-carousel" circular
                 autoplayInterval={3000} itemTemplate={productTemplate} />
         </div>
