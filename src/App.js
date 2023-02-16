@@ -14,6 +14,7 @@ import Navbar from './components/Home/Navbar';
 import HRPolicy from './components/Policy/HRPolicy';
 import FinancePolicy from './components/Policy/FinancePolicy';
 import ProcurePolicy from './components/Policy/ProcurePolicy';
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/HRP" element={<HRPolicy />}></Route>
         <Route path="/FP" element={<FinancePolicy />}></Route>
         <Route path="/LP" element={<ProcurePolicy />}></Route>
+        <Route path="/project/:id" element={<Project />}></Route>
       </Routes>
       <Footer />
     </div>
