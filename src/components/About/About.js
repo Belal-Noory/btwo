@@ -70,7 +70,7 @@ const About = () => {
     <div>
       <Navbar />
       <div className="text-700 text-center pr-6 pl-6 pb-6 pt-2">
-        <img src="assets/logo2.png" className="img-fluid" alt='logo' width="500" />
+        <img src="/assets/logo2.png" className="img-fluid" alt='logo' width="500" />
         <div className="font-bold text-4xl mb-3" style={{ color: 'var(--primaryColor)' }}>We are committed to creating a solid and independent society without inequalities and discrimination, where everybody enjoys equal opportunities.</div>
         <div className="text-700 text-justify">
           <div className="text-200">Women’s Hope for peace and Life Organization (WHPLO) is nongovernmental, non-profit and independent organization established in 07-May-2020 (18-02-1399) based in Kunduz province and officially registered with Ministry of Economy of Islamic Republic of Afghanistan bearing registration number 4953.

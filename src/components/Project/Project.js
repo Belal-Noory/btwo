@@ -62,7 +62,7 @@ const Project = () => {
                 <div className="grid grid-nogutter surface-0 text-800">
                     <div className="col-12 md:col-6">
                         <section className='flex flex-column justify-content-center align-items-center text-center'>
-                            <img src="assets/logo1.png" className="img-fluid" alt='logo' width="300" />
+                            <img src="/assets/logo1.png" className="img-fluid" alt='logo' width="300" />
                             <div className="text-900 font-bold text-5xl mb-3">{recentPost.title}</div>
                             <div className="text-700 text-2xl">Funded by {recentPost.doner}</div>
                         </section>
@@ -71,7 +71,7 @@ const Project = () => {
                         <Carousel showThumbs={false} showArrows={false} infiniteLoop={true} autoPlay={true} showStatus={false}>
                             {
                                 recentPost.images.map((img, index) =>
-                                    <img key={index} src={"assets/"+img} alt="Header" className="md:ml-auto block md:h-full" style={{ clipPath: 'polygon(8% 0, 100% 0%, 100% 100%, 0 100%)' }} />
+                                    <img key={index} src={"/assets/"+img} alt="Header" className="md:ml-auto block md:h-full" style={{ clipPath: 'polygon(8% 0, 100% 0%, 100% 100%, 0 100%)' }} />
                                 )
                             }
                         </Carousel>

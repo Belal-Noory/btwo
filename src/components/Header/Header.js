@@ -31,7 +31,7 @@ const Header = () => {
         <Carousel showThumbs={false} showArrows={false} infiniteLoop={true} autoPlay={true} showStatus={false}>
           {
             images.map((img, index) =>
-                <img key={index} src={'assets/' + img} alt="Header" style={{ clipPath: clipPath, height:'92.1vh', objectFit:'cover' }} />
+                <img key={index} src={'/assets/' + img} alt="Header" style={{ clipPath: clipPath, height:'92.1vh', objectFit:'cover' }} />
             )
           }
         </Carousel>
