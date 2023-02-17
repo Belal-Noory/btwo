@@ -42,7 +42,7 @@ const RecentActivity = () => {
                 </section>
             </div>
             <div className="col-12 md:col-6 overflow-hidden">
-                <img src={`${process.env.PUBLIC_URL}/assets/${recentPost.image}`} alt="hero-1" className="md:ml-auto block md:h-full img-fluid" style={{ clipPath: clipPath, objectFit: 'cover' }} />
+                <img src={"assets/"+recentPost.image} alt="hero-1" className="md:ml-auto block md:h-full img-fluid" style={{ clipPath: clipPath, objectFit: 'cover' }} />
             </div>
         </div>
     )

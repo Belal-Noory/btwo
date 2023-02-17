@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
                 <div className="col-12 grid" style={{ background: 'var(--primaryColor)' }}>
                     <div className="col-12 md:col-4 pl-8 text-white">
-                        <Link to="/"><img src={`${process.env.PUBLIC_URL}/assets/logo2.png`} className="img-fluid" alt='logo' /></Link>
+                        <Link to="/"><img src="assets/logo2.png" className="img-fluid" alt='logo' /></Link>
                     </div>
                     <div className="col-12 md:col-8 text-center" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                         <div className="text-900 font-bold text-5xl text-white">Donate Us</div>
